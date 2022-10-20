@@ -19,7 +19,7 @@
                 double hetWeerstand = double.Parse(Console.ReadLine());
                 Console.Write("geef maar de inspanning: ");
                 double deInspanning = double.Parse(Console.ReadLine());
-                Console.WriteLine("De inspanning is" + (hetWeerstand / deInspanning));
+                Console.WriteLine("De stroomsterkte is" + (hetWeerstand / deInspanning));
             }else 
             {
                 Console.Write("geef maar de inspanning: ");
