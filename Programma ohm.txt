@@ -1,0 +1,31 @@
+
+            Console.Write("Wat wil berekenen de inspanning, het weerstand of de stroomsterkte? ");
+            string antwoord = Console.ReadLine();
+            bool inspanning = (antwoord == "de inspanning");
+            bool stroomsterkte = (antwoord == "de stroomsterkte");
+            
+
+            if (inspanning)
+            {
+                Console.Write("geef maar het weerstand: ");
+                double hetWeerstand = double.Parse(Console.ReadLine());
+                Console.Write("geef maar de stroomsterkte: ");
+                double deStroomsterkte =double.Parse( Console.ReadLine());
+                Console.WriteLine("De inspanning is" + (hetWeerstand * deStroomsterkte));
+
+            }else if (stroomsterkte)
+            {
+                Console.Write("geef maar het weerstand: ");
+                double hetWeerstand = double.Parse(Console.ReadLine());
+                Console.Write("geef maar de inspanning: ");
+                double deInspanning = double.Parse(Console.ReadLine());
+                Console.WriteLine("De inspanning is" + (hetWeerstand / deInspanning));
+            }else 
+            {
+                Console.Write("geef maar de inspanning: ");
+                double deInspanning = double.Parse(Console.ReadLine());
+                Console.Write("geef maar de stroomsterkte: ");
+                double deStroomsterkte = double.Parse(Console.ReadLine());
+                Console.WriteLine("Het weerstand is" + (deStroomsterkte / deInspanning));
+            }
+            Console.ReadLine();
